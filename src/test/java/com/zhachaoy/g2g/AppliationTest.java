@@ -9,6 +9,12 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 
+/**
+ * AppliationTest class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class AppliationTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -33,8 +39,8 @@ public class AppliationTest {
      * Method tests a positive scenario of the application. Input file by default picked up by the input.
      */
     public void testProgram() throws IOException {
-        InputProcessor.ProcessFile(filePath);
-        InputProcessor.ConvertTokentoValue();
+        InputProcessor.processFile(filePath);
+        InputProcessor.convertTokentoValue();
         OutputProcessor.processReplyForQuestion();
         Assert.assertEquals("glob prok Iron is 782.0 Credits\n" +
                         "pish tegj glob glob is 42.0\n" +

@@ -1,5 +1,11 @@
 package com.zhachaoy.g2g;
 
+/**
+ * Appliation class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class Appliation {
 
     /**
@@ -13,8 +19,8 @@ public class Appliation {
             filePath = args[0];
         }
         try {
-            InputProcessor.ProcessFile(filePath);
-            InputProcessor.ConvertTokentoValue();
+            InputProcessor.processFile(filePath);
+            InputProcessor.convertTokentoValue();
             OutputProcessor.processReplyForQuestion();
         } catch (Exception e) {
             System.out.println("Input File Not Found");

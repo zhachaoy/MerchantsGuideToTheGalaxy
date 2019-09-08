@@ -2,6 +2,12 @@ package com.zhachaoy.g2g;
 
 import java.util.*;
 
+/**
+ * Parser class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class Parser {
 
     // Define the number of repeated characters and repetitions that are not allowed

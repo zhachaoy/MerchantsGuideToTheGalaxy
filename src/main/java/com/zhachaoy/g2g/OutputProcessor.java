@@ -6,6 +6,12 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * OutputProcessor class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class OutputProcessor extends InputProcessor {
 
     //FIXME A regular expression that determines if it is a problem, and if it contains the word "is", it is a responsive question.

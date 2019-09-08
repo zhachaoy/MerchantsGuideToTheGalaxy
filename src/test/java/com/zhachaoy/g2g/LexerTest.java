@@ -8,6 +8,12 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+/**
+ * LexerTest class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class LexerTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();

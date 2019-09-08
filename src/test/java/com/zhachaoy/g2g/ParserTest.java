@@ -4,6 +4,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * ParserTest class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class ParserTest {
 
     protected Character[] characterArray;

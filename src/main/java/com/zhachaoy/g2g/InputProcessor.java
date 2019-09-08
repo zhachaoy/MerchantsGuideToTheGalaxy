@@ -6,6 +6,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * InputProcessor class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class InputProcessor {
 
     /**
@@ -29,7 +35,7 @@ public class InputProcessor {
      * @param filePath
      * @throws IOException
      */
-    public static void ProcessFile(String filePath) throws IOException {
+    public static void processFile(String filePath) throws IOException {
         BufferedReader bufferedReader = null;
         if (filePath == null) {
             InputStream in = InputProcessor.class.getClassLoader().getResourceAsStream("Input");
@@ -49,7 +55,7 @@ public class InputProcessor {
      * Parsing the token value
      * {pish=X, tegj=L, prok=V, glob=I}
      */
-    public static void ConvertTokentoValue() {
+    public static void convertTokentoValue() {
         Iterator it = tokenValueMapping.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry token = (Map.Entry) it.next();
@@ -70,7 +76,7 @@ public class InputProcessor {
 
         if (line.endsWith("?")) {
             questionAndReply.put(line, "");
-        } else if (arr.length == 3 && arr[1].equalsIgnoreCase("is")) {
+        } else if (arr.length == 3 && "is".equalsIgnoreCase(arr[1])) {
             tokenValueMapping.put(arr[0], arr[arr.length - 1]);
         } else if (line.toLowerCase().endsWith("credits")) {
             missingValues.add(line);
@@ -99,10 +105,10 @@ public class InputProcessor {
         String element = null;
         String[] valueofElement = null;
         for (int i = 0; i < array.length; i++) {
-            if (array[i].toLowerCase().equals("credits")) {
+            if ("credits".equals(array[i].toLowerCase())) {
                 creditValue = Integer.parseInt(array[i - 1]);
             }
-            if (array[i].toLowerCase().equals("is")) {
+            if ("is".equals(array[i].toLowerCase())) {
                 splitIndex = i - 1;
                 element = array[i - 1];
             }

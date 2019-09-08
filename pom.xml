@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zhachaoy</groupId>
-    <artifactId>g2g</artifactId>
+    <artifactId>MerchantsGuideToTheGalaxy</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->

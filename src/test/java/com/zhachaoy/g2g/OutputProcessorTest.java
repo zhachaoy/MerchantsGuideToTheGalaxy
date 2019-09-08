@@ -9,6 +9,12 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * OutputProcessorTest class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class OutputProcessorTest extends TestCase {
 
     protected String query, inputQuery;

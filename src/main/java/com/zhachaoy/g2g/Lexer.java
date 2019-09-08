@@ -1,5 +1,11 @@
 package com.zhachaoy.g2g;
 
+/**
+ * Lexer class
+ *
+ * @author zhachaoy@163.com
+ * @date 2019/09/08
+ */
 public class Lexer {
 
     /**
