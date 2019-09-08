@@ -36,12 +36,12 @@ public class AppliationTest {
 
     @Test
     /**
-     * Method tests a positive scenario of the application. Input file by default picked up by the input.
+     * Method tests a positive scenario of the application. input file by default picked up by the input.
      */
     public void testProgram() throws IOException {
-        InputProcessor.processFile(filePath);
-        InputProcessor.convertTokentoValue();
-        OutputProcessor.processReplyForQuestion();
+        Lexer.processFile(filePath);
+        Lexer.convertTokentoValue();
+        Processor.processReplyForQuestion();
         Assert.assertEquals("glob prok Iron is 782.0 Credits\n" +
                         "pish tegj glob glob is 42.0\n" +
                         "glob prok Gold is 57800.0 Credits\n" +

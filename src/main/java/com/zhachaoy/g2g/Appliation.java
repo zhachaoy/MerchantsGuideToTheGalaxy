@@ -19,9 +19,9 @@ public class Appliation {
             filePath = args[0];
         }
         try {
-            InputProcessor.processFile(filePath);
-            InputProcessor.convertTokentoValue();
-            OutputProcessor.processReplyForQuestion();
+            Lexer.processFile(filePath);
+            Lexer.convertTokentoValue();
+            Processor.processReplyForQuestion();
         } catch (Exception e) {
             System.out.println("Input File Not Found");
         }

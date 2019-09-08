@@ -7,16 +7,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * OutputProcessor class
+ * Processor class
  *
  * @author zhachaoy@163.com
  * @date 2019/09/08
  */
-public class OutputProcessor extends InputProcessor {
+public class Processor extends Lexer {
 
     //FIXME A regular expression that determines if it is a problem, and if it contains the word "is", it is a responsive question.
     private static Pattern QUERY_REGEX = Pattern.compile("(is)");
-
 
     /**
      * processReplyForQuestion() itertates over the questionAndReply map that contain all the valid queries as keys.
@@ -50,7 +49,7 @@ public class OutputProcessor extends InputProcessor {
             for (int i = 0; i < tokenValue.size(); i++) {
                 tokenValueToRoman.add(tokenValueMapping.get(tokenValue.get(i)));
             }
-            float value = new Lexer().romanToDecimal(tokenValueToRoman.toString());
+            float value = new Parser().romanToDecimal(tokenValueToRoman.toString());
             tokenValue.add("is");
             tokenValue.add(Float.toString(value));
             System.out.println(outputFormatter(tokenValue));
@@ -79,7 +78,7 @@ public class OutputProcessor extends InputProcessor {
                     System.err.println(query + " : I have no idea what you are talking about");
                 }
             }
-            float elementValue = (new Lexer().romanToDecimal(tokenValueToRoman.toString()) * InputProcessor.elementValue.get(element));
+            float elementValue = (new Parser().romanToDecimal(tokenValueToRoman.toString()) * Lexer.elementValue.get(element));
             tokenValue.add("is");
             tokenValue.add(Float.toString(elementValue));
             tokenValue.add("Credits");

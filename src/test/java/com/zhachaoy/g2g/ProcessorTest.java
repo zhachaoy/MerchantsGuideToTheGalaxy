@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  * @author zhachaoy@163.com
  * @date 2019/09/08
  */
-public class OutputProcessorTest extends TestCase {
+public class ProcessorTest extends TestCase {
 
     protected String query, inputQuery;
     protected ArrayList<String> output = new ArrayList<String>();
