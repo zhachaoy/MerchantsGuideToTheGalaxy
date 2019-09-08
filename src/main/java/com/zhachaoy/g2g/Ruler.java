@@ -164,7 +164,7 @@ public class Ruler {
      */
     private static boolean currentLiteralSmallerThanPrevious(char CurrentLiteral, char keyForValueContainingThree) {
         if (ROMAN_TO_NUMERIC_MAPPING.get(CurrentLiteral) > ROMAN_TO_NUMERIC_MAPPING.get(keyForValueContainingThree)) {
-            System.err.println("Error : Should have been a lesser Roman Numeral next instead of " + CurrentLiteral);
+            System.err.println("Error: Should have been a lesser Roman Numeral next instead of " + CurrentLiteral);
             System.exit(0);
             return false;
         } else {
