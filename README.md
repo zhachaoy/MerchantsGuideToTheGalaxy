@@ -20,18 +20,19 @@
 8. 输出结果
 
 ##二.逐步求精思路
-### 1.处理输入：
+### 1.处理输入(Application主入口)：
 1. 读取输入文件
 2. 初始化核心概念价值
 3. 计算缺失的概念价值
 
-### 2.词法解析：
+### 2.词法解析(Lexer)：
+1. 对读取的输入进行分词解析
 
-### 3语法解析
+### 3语法解析(Parser, Ruler)
 1. 处理合法问题
 2. 判断所有规则
 
-### 4处理输出
+### 4处理输出(Processor)
 1. 判断是否为可处理问题
 2. 拼接响应字符串
 
@@ -93,6 +94,4 @@ glob prok Silver is 68 Credits
 glob prok Gold is 57800 Credits
 glob prok Iron is 782 Credits
 I have no idea what you are talking about
-
 ```
-
