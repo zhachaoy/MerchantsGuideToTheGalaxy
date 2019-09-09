@@ -1,6 +1,6 @@
-#Merchant's Guide to the Galaxy
+# Merchant's Guide to the Galaxy
 
-##一.自顶向下分解
+## 一.自顶向下分解
 核心概念：
 
 货币（Sliver，Gold，Iron等）
@@ -21,7 +21,7 @@
 7. 计算问题的价值
 8. 输出结果
 
-##二.逐步求精思路
+## 二.逐步求精思路
 ### 1.处理输入(Application主入口)：
 1. 读取输入文件
 2. 初始化核心概念价值
@@ -40,12 +40,12 @@
 2. 计算结果
 3. 拼接响应字符串
 
-##三.项目说明
+## 三.项目说明
 1. 使用maven构建项目
 2. 使用junit4.12用于单元测试
 3. jdk1.8.212
 
-##四.问题附件
+## 四.问题附件
 ```
 Merchant's Guide to the Galaxy
 
